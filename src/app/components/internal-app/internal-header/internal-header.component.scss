@@ -1,0 +1,24 @@
+nav {
+  display: block;
+  margin-bottom: 8px;
+
+  a {
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    color: #bd93f9;
+    padding: 0 0 0 3px;
+
+    &.active {
+      background-color: #bd93f9;
+      color: #333;
+    }
+
+    &:after {
+      content: '|';
+      padding: 1px 6px;
+      margin-top: 1px;
+      color: #999;
+      background-color: #2628347e;
+    }
+  }
+}

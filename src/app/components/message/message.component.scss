@@ -1,0 +1,11 @@
+.message {
+  display: block;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 10px 15px;
+
+  span {
+    cursor: pointer;
+    color: #fe5455;
+  }
+}

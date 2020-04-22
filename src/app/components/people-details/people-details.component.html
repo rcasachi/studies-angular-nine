@@ -1,0 +1,21 @@
+<div class="details">
+  <div *ngIf="user">
+    <p>Details of the user: {{ user.name }}</p>
+    <pre>
+      {{ user | json }}
+    </pre>
+  </div>
+  <hr>
+
+  <button (click)="createUser()">Create User</button>
+  <button (click)="updateUser()">Update User</button>
+  <button (click)="deleteUser()">Delete User</button>
+  <button (click)="getUserPosts()">Get Posts By User</button>
+
+  <hr>
+
+  <h3>The Users' Posts</h3>
+  <pre>
+    {{ posts | async | json }}
+  </pre>
+</div>

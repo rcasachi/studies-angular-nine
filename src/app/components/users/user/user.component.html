@@ -1,0 +1,10 @@
+<div class="styled">
+  <p>This is user</p>
+  <div
+    [@OpenClose]="isOpen ? 'open' : 'closed'"
+    class="open-close-container"
+    (click)="toggle()"
+  >
+    <p>The box is now {{ isOpen ? 'Open' : 'Close' }}</p>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="app-internal-container">
+  <app-internal-header></app-internal-header>
+
+  <h2>Users for Internal Purposes</h2>
+
+  <mat-list dense class="app-mat-list">
+    <mat-list-item *ngFor="let user of users" class="app-list-item">
+      <h3 matLine> {{user.name}} </h3>
+      <p matLine>
+        <span> {{user.email}} </span>
+        <span class="demo-2"> -- {{user.username}} </span>
+      </p>
+
+      <a mat-icon-button color="primary" aria-label="Edit Button" routerLink="/internal/new-user/{{ user.$key }}">
+        <mat-icon>edit</mat-icon>
+      </a>
+
+      <button mat-icon-button color="warn" aria-label="Delete Button" (click)="deleteUser(user.$key)">
+        <mat-icon>delete</mat-icon>
+      </button>
+
+    </mat-list-item>
+  </mat-list>
+  <!-- <pre>{{ users | json }}</pre> -->
+</div>

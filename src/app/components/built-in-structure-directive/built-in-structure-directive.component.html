@@ -1,0 +1,19 @@
+<button (click)="showList = !showList">Toggle List Visibility</button>
+<hr>
+<div *ngIf="showList">
+  <ul>
+    <li *ngFor="let message of messages; let i = index">
+      Index {{ i }} = Message: {{ message }}
+    </li>
+  </ul>
+</div>
+<hr>
+<h4>NgSwitch</h4>
+<input type="text" [(ngModel)]="alertType">
+<div [ngSwitch]="alertType">
+  <span *ngSwitchCase="'success'" class="alert success">Message of Success</span>
+  <span *ngSwitchCase="'warning'" class="alert warning">Message of Warning</span>
+  <span *ngSwitchCase="'info'" class="alert info">Message of Information</span>
+  <span *ngSwitchCase="'danger'" class="alert danger">Message of Error</span>
+  <span *ngSwitchDefault class="alert">This is a default message...</span>
+</div>

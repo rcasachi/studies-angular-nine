@@ -1,0 +1,23 @@
+<div class="higher-container">
+  <h2>Custom Attribute Directives</h2>
+
+  <!-- <input type="text" value="I am your initial value 😄" [appChangeCase]="'upper'"> -->
+  <input type="text" value="I am your initial value 😄" appChangeCase [case]="'upper'">
+
+  <hr>
+  <h2>Custom Structural Directives</h2>
+
+  <div *ngIf="showUnless">
+    This will show if variable <code>showUnless</code> is <code>true</code>.
+  </div>
+
+  <ng-template [ngIf]="showUnless">
+    <div>
+      This will show if variable <code>showUnless</code> is <code>true</code>.
+    </div>
+  </ng-template>
+
+  <div *appUnless="showUnless">
+    This will show if variable <code>showUnless</code> is <code>false</code>.
+  </div>
+</div>

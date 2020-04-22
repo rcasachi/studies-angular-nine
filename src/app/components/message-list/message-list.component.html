@@ -1,0 +1,19 @@
+<h1>Lifecycle Studies</h1>
+
+<input type="text" (keyup.enter)="addMessage()" [(ngModel)]="message">
+
+<h3>List of Components</h3>
+<ul class="list-group">
+  <li
+    class="list-group-item"
+    *ngFor="let message of messages; let i = index;"
+  >
+    <app-message
+      [message]="message.message"
+      [index]="i"
+      (messageDeleted)="onMessageDelete($event)"
+    ></app-message>
+  </li>
+</ul>
+
+<button *ngIf="messages.length > 0" (click)="changeFirstMessage()">Change First Message</button>

@@ -1,0 +1,24 @@
+h1, h5 {
+  font-family: monospace;
+  font-size: 18px;
+  margin: 0;
+  padding: 8px;
+}
+h5 {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+button {
+  border: 1px solid #333;
+  background-color: #666;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #777;
+  }
+}

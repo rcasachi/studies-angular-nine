@@ -1,0 +1,30 @@
+<h2>Style Binding Studies</h2>
+
+<button
+  [style.color]="isValid ? 'green' : 'red'"
+  (click)="isValid = !isValid"
+>
+  Color would be Green or Red Conditionally
+</button>
+<hr>
+<div [style.background-color]="'yellow'">
+  Background Color would be yellow
+</div>
+<hr>
+<div
+  [style.background-color]="'yellow'"
+  [style.font-weight]="'bold'"
+>
+  Background Color would be red
+  And Font Weight would be bold
+</div>
+<hr>
+<div [style.fontSize.%]="50">
+  Font Size in %
+</div>
+<div [style.fontSize.px]="50">
+  Font Size in pixels
+</div>
+<div [style.fontSize.em]="30">
+  Font Size in em
+</div>

@@ -1,0 +1,21 @@
+* {
+  font-family: monospace;
+}
+h1, button {
+  margin: 16px;
+}
+div {
+  height: 100px;
+}
+.blue-gradient {
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+.red-gradient {
+  background: linear-gradient(141deg, #f857a6 0%, #ff5858 75%);
+}
+code {
+  font-size: 10px;
+  background-color: #43475a;
+  color: #51fa7b;
+  padding: 0 8px;
+}

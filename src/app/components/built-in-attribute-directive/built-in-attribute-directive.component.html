@@ -1,0 +1,18 @@
+<h1>NgClass and NgStyle</h1>
+
+<button (click)="gradientToggle = !gradientToggle">Toggle Gradient</button>
+
+<div
+  [ngClass]="gradientToggle ? 'blue-gradient' : 'red-gradient'"
+  [ngStyle]="{color: 'white', 'font-family': 'Tahoma', 'font-size.px': 12}"
+>
+  A nice DIV is here
+</div>
+
+<hr>
+
+<h1>NgNonBindable</h1>
+
+<p ngNonBindable>
+  The user's name can be printed on to the screen in Angular using the string interpolation Syntax like: <code>{{ username }}</code>
+</p>

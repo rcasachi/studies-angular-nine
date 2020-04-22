@@ -1,0 +1,10 @@
+<h1>View Queries Studies</h1>
+
+<h3>List of Alerts</h3>
+
+<app-alert
+  *ngFor="let alert of alerts"
+  [alert]="alert"
+></app-alert>
+
+<ng-content></ng-content>

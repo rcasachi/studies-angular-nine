@@ -1,0 +1,94 @@
+.higher-container {
+  margin: 16px;
+  font-family: monospace;
+  font-size: 12px;
+
+  input {
+    font-family: inherit;
+    width: 300px;
+  }
+
+  hr {
+    margin: 16px 0;
+  }
+
+  code {
+    font-size: 10px;
+    background-color: #43475a;
+    color: #51fa7b;
+    padding: 0 8px;
+  }
+
+  a, button {
+    background-color: #43475a;
+    border: 2px solid #333;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #333;
+    }
+  }
+
+  .form-group {
+    display: block;
+    margin-bottom: 16px;
+
+    label {
+      display: block;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .form-control {
+      padding: 8px 16px;
+      background-color: #43475a;
+      border: 1px solid #333;
+      border-radius: 3px;
+      color: #aaa;
+      font-size: 12px;
+      min-width: 30%;
+      font-family: inherit;
+    }
+
+    .error {
+      font-size: 10px;
+      color: #dd9999;
+    }
+
+    .ng-touched.ng-invalid {
+      border: 1px solid #dd9999;
+    }
+  }
+
+  .radio, .checkbox {
+    display: flex;
+    justify-items: left;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    input {
+      width: 20px;
+    }
+  }
+
+  fieldset {
+    width: 35%;
+    border: 0;
+    padding: 8px;
+    margin: 12px 0;
+    background-color: rgba(0, 0, 0, .2);
+    border-top: 1px solid #222;
+
+    input {
+      width: 70%;
+    }
+  }
+}

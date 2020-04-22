@@ -1,0 +1,21 @@
+.higher-container {
+  margin: 16px;
+  font-family: monospace;
+  font-size: 12px;
+
+  input {
+    font-family: inherit;
+    width: 300px;
+  }
+
+  hr {
+    margin: 16px 0;
+  }
+
+  code {
+    font-size: 10px;
+    background-color: #43475a;
+    color: #51fa7b;
+    padding: 0 8px;
+  }
+}
